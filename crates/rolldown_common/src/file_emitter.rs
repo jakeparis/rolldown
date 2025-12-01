@@ -278,8 +278,9 @@ impl FileEmitter {
       // Check for filename conflicts
       let lowercase_filename: ArcStr = value.file_name.as_str().to_lowercase().into();
       if !self.emitted_filenames.insert(lowercase_filename) {
-        warnings
-          .push(BuildDiagnostic::filename_conflict(value.file_name.clone()).with_severity_warning());
+        warnings.push(
+          BuildDiagnostic::filename_conflict(value.file_name.clone()).with_severity_warning(),
+        );
       }
 
       bundle.push(Output::Chunk(Arc::new(OutputChunk {

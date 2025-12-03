@@ -2,6 +2,7 @@ packages:
   - packages/*
   - packages/rolldown/tests
   - packages/test-dev-server/tests
+  - packages/test-dev-server/tests/browser/hmr-full-bundle-mode
   - packages/test-dev-server/tests/fixtures/*
   - packages/test-dev-server/tests/tmp/fixtures/*
   - packages/rolldown/tests/fixtures/resolve/issue-5846

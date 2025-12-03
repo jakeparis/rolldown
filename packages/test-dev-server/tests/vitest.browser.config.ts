@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     include: [
-      '**/*.browser.{test,spec}.ts',
+      '**/*.browser.{test,spec}.{js,ts}',
     ],
     browser: {
       enabled: true,

@@ -2,7 +2,7 @@
   "extends": "../../../tsconfig.json",
   "include": ["src/*", "src/**/*", "**/_config.ts", "**/*.test.ts"],
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["node", "vitest/browser"],
     "rootDir": "./",
     "allowJs": true,
     "isolatedDeclarations": false

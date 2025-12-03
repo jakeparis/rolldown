@@ -79,6 +79,10 @@
     "packages/test-dev-server": {
       "entry": [],
     },
+    "packages/test-dev-server/tests": {
+      "entry": ["**/*.{test,spec}.{js,ts}", "**/*.browser.{test,spec}.{js,ts}"],
+      "ignoreDependencies": ["@vitest/browser"],
+    },
     "scripts": {
       "entry": ["misc/**"],
     },
